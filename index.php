@@ -183,5 +183,8 @@ $sent = (isset($_GET['sent']) and
         <div id="footer">
             Inspired by WINNING.
         </div>
+        <div id="disclaimer">
+            This site is for parody purposes only. No offense intended. We take no responsibility if any of this makes it into a comp seen by a client. Use at your own risk.
+        </div>
     </body>
 </html>
