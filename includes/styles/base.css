@@ -1,0 +1,72 @@
+html {
+	background-color: #f1f1f1;
+}
+
+body {
+	background: #f1f1f1 url("../../images/header.jpg") no-repeat center top;
+	padding: 340px 0 0 0;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+form {
+	width: 348px;
+	margin: 0 auto;
+}
+
+fieldset label, fieldset select {
+	float: left;
+}
+
+fieldset label {
+	width: 246px;
+	height: 18px;
+	display: block;
+	clear: both;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#type {
+	background: transparent url("../../images/type.jpg") no-repeat top left;
+}
+
+#number {
+	background: transparent url("../../images/number.jpg") no-repeat top left;
+}
+
+#sentences {
+	background: transparent url("../../images/sentences.jpg") no-repeat top left;
+}
+
+#create {
+	width: 348px;
+	height: 49px;
+	margin: 0 auto;
+	background: transparent url("../../images/create.jpg") no-repeat top left;
+	border: 0;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+	clear: both;
+}
+
+#copytext {
+	width: 600px;
+	margin: 0 auto;
+	padding: 10px;
+	border: solid 1px #000;
+	clear: both;
+}
+
+#footer {
+	width: 600px;
+	margin: 0 auto;
+	padding: 30px 0;
+	text-align: center;
+	font: 10px Arial, sans-serif;
+	color: grey;
+}
