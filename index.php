@@ -182,6 +182,9 @@ $sent = (isset($_GET['sent']) and
             
             ?></pre>
         
+        
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvaticanassass.in&amp;layout=standard&amp;show_faces=false&amp;width=600&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:35px; position: absolute; top: 333px; right: 0" allowTransparency="true"></iframe>
+        
         </div>
         <div id="footer">
             Inspired by WINNING.
