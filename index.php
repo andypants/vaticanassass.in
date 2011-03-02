@@ -1,4 +1,6 @@
 <?php
+require_once('magpierss/rss_fetch.inc');
+
 $sentences = array(1 =>
     "100%. You know, here's your first pee test. Next one goes in your mouth.",
     "No, you won't get high .... It's all good. It's all good, guys. Quit panicking. Quit panicking. No panic, no judgment.",
@@ -67,6 +69,23 @@ $sentences = array(1 =>
     "And if you're a part of my family, I will love you violently. If you infiltrate and try to hurt my family, I will murder you violently."
 );
 
+
+$rss = fetch_rss('http://twitter.com/statuses/user_timeline/259379883.rss');
+foreach ($rss->items as $item) {
+	$content = $item['title'];
+	$content = str_replace("\n", "", $content);
+	$content = str_replace("\r", "", $content);
+	$content = str_replace("#", " ", $content);
+	$content = str_replace("RT", "", $content);
+	$content = str_replace("charliesheen:", "", $content);
+	$content = preg_replace("/.*(http[^\s]+).*/", "", $content);
+	$content = preg_replace("/.*(@+).*/", "", $content);
+	$content = strip_tags($content);
+	
+	$sentences[] = $content;
+}
+	
+	
 $nbr = (isset($_GET['nbr']) and 
          in_array($_GET['nbr'], range(1,count($sentences)))) ?
          $_GET['nbr'] : 1;
@@ -188,6 +207,7 @@ $sent = (isset($_GET['sent']) and
         </div>
         <div id="disclaimer">
             This site is for parody purposes only. No offense intended. We take no responsibility if any of this makes it into a comp seen by a client. Use at your own risk.
+
         </div>
     </body>
 </html>
