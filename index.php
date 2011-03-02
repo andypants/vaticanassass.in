@@ -161,6 +161,9 @@ $sent = (isset($_GET['sent']) and
                if($elem !== "none"){
                    $text[$i] = "<$elem>";
                }
+				else{
+					$text[$i] = "";
+				}
                for($j = 1; $j <= $sent; $j++)
                {
                    $rand = rand(1,count($sentences));
