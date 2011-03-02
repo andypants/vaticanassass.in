@@ -45,7 +45,7 @@ fieldset label {
 #create {
 	width: 348px;
 	height: 49px;
-	margin: 0 auto;
+	margin: 0 auto 15px auto;
 	background: transparent url("../../images/create.jpg") no-repeat top left;
 	border: 0;
 	text-indent: -9999px;

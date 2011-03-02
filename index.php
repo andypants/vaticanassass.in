@@ -82,7 +82,9 @@ $sent = (isset($_GET['sent']) and
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 	    <title>Vatican Assassin: Charlie Sheen Lorem Ipsum Generator</title>
-	    
+        <meta name="description" content="Placeholder text generator, powered by Tiger's Blood." />
+        <meta name="keywords" content="Charlie, Sheen, Charlie Sheen, rant, lorem ipsum, lipsum, generator, text, placeholder" />
+        	    
         <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css">
 		<link rel="stylesheet" type="text/css" href="includes/styles/base.css" />
 
